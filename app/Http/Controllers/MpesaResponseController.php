@@ -10,14 +10,14 @@ class MpesaResponseController extends Controller
     //obtain response from confirmation url
      public function confirmation(){
         //retrieve response from the created json file
-        $confirmation_data = file_get_contents("https://willy.itn.co.ke/confirmationresponse.json");
+        $confirmation_data = file_get_contents("https://willy.itn.co.ke/confirmationResponse.json");
         return $confirmation_data;
      }
 
     //obtain response from validation url
     public function validation(){
         //retrieve the response from the created json file
-        $validation_data = file_get_contents("https://willy.itn.co.ke/validationresponse.json");
+        $validation_data = file_get_contents("https://willy.itn.co.ke/validationResponse.json");
         return $validation_data;
 
     }
@@ -25,7 +25,7 @@ class MpesaResponseController extends Controller
     //obtain response from stkpush 
     public function stkPush(){
         //retrieve the response from the created json file 
-        $stkdata = file_get_contents("https://willy.itn.co.ke/callbackresponse.json");
+        $stkdata = file_get_contents("https://willy.itn.co.ke/callbackResponse.json");
         return $stkdata;
     }
 

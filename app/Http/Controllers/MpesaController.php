@@ -51,7 +51,6 @@ class MpesaController extends Controller
          define('CALLBACK_URL', 'https://willy.itn.co.ke/callback.php');
 
          $ch = curl_init('https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest');
-
          #Definition and assignment of variable values
          $BusinessShortCode = '174379';//
          $Passkey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
